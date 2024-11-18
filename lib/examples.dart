@@ -1,24 +1,12 @@
 import 'dart:async';
 import 'dart:typed_data';
 
+import 'package:azim_resume/data.dart';
 import 'package:pdf/pdf.dart';
 
-import 'data.dart';
-import 'examples/calendar.dart';
-import 'examples/certificate.dart';
-import 'examples/document.dart';
-import 'examples/invoice.dart';
-import 'examples/report.dart';
-import 'examples/resume.dart';
+import 'screens/resume.dart';
 
-var examples = <Example>[
-  const Example('RÉSUMÉ', 'resume.dart', createResume),
-  const Example('DOCUMENT', 'document.dart', generateDocument),
-  const Example('INVOICE', 'invoice.dart', generateInvoice),
-  const Example('REPORT', 'report.dart', generateReport),
-  const Example('CALENDAR', 'calendar.dart', generateCalendar),
-  const Example('CERTIFICATE', 'certificate.dart', generateCertificate, true),
-];
+var examples = const Example('RÉSUMÉ', 'resume.dart', generateResume);
 
 typedef LayoutCallbackWithData = Future<Uint8List> Function(
     PdfPageFormat pageFormat, CustomData data);

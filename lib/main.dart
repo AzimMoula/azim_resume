@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const App());
@@ -18,8 +18,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light().copyWith(scrollbarTheme: scrollbarTheme),
       darkTheme: ThemeData.dark().copyWith(scrollbarTheme: scrollbarTheme),
-      title: 'Flutter PDF Demo',
-      home: const MyApp(),
+      title: 'Azim Resume',
+      home: const HomeScreen(),
     );
   }
 }
