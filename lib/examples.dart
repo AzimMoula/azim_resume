@@ -6,7 +6,7 @@ import 'package:pdf/pdf.dart';
 
 import 'screens/resume.dart';
 
-var examples = const Example('RÉSUMÉ', 'resume.dart', generateResume);
+var examples = const Example('Azim Resume', 'resume.dart', generateResume);
 
 typedef LayoutCallbackWithData = Future<Uint8List> Function(
     PdfPageFormat pageFormat, CustomData data);
